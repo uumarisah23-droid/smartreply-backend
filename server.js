@@ -66,6 +66,10 @@ A user received this message:
 
 "${message}"
 
+Detect the language of the user's message.
+
+Generate all replies in the SAME language as the original message.
+
 Generate replies in EXACTLY this format:
 
 CASUAL:
