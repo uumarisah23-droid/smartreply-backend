@@ -51,7 +51,7 @@ app.get("/test-claude", async (req, res) => {
 
 app.post("/generate-replies", async (req, res) => {
   try {
-    const { message } = req.body;
+    const { message, language } = req.body;
 
     const response = await axios.post(
       "https://api.anthropic.com/v1/messages",
@@ -66,9 +66,14 @@ A user received this message:
 
 "${message}"
 
-Detect the language of the user's message.
+If language is "Auto Detect",
+detect the language of the user's message and respond in that language.
 
-Generate all replies in the SAME language as the original message.
+Otherwise generate ALL replies in:
+${language}
+
+The selected language is:
+${language}
 
 Generate replies in EXACTLY this format:
 
