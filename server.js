@@ -102,7 +102,12 @@ SAVAGE:
 - reply 2
 - reply 3
 
+
 Rules:
+- Detect the language of the user's message automatically.
+- Generate replies in the SAME language as the original message.
+- If the message contains multiple languages, respond in the dominant language.
+- Keep cultural context and tone appropriate for that language.
 - Each reply must be short.
 - Each reply must be different.
 - Make them ready to copy and send.
